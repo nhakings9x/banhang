@@ -124,12 +124,18 @@ function Cart() {
       <div className="total">
         <h3>Tổng:&nbsp;{formatVND(total, 'VND')}</h3>
         <div className="box-paypal">
-        <div className="box-paypal_label">
-          Thanh toán qua Paypal:
-        </div>
-        <PaypalButton total={totalUSD} tranSuccess={tranSuccess} />
+          
+          {/* <PaypalButton total={totalUSD} tranSuccess={tranSuccess} /> */}
         </div>
       </div>
+        <div>
+          <input class = 'input' placeholder = "Họ và Tên"></input>
+          <input class = 'input' placeholder = "Số điện thoại"></input>
+          <input class = 'input' placeholder = "Địa chỉ"></input>
+        </div>
+        <div class = "thanh-toan">
+          <a href="" class = 'dathang'>Đặt hàng</a>
+        </div>
     </div>
   );
 }
